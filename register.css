@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+}
+.register{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 18px;
+    width: 400px;
+
+}
+input[type=text],[type=email],[type=tel],[type=password]{
+   border: none;
+   outline: none;
+   background: none;
+   border-bottom: 1px solid rgb(255, 255, 255);
+   width: 100%;
+  }
+
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 70px;
+    padding-top: 30px;
+    
+}
+  input[type=submit]{
+    background-color:red;
+    color:white;
+    padding-left: 80px;
+    padding-top: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    letter-spacing: 8px;
+    
+}
+
+.register table td{
+    padding: 10px;
+}
+@media screen and (max-width: 700px) {
+  .register{
+    width: 250px;
+  }
+  input[type=text],[type=email],[type=tel],[type=password],select{
+   width: 100%;
+  }
+.btn,input[type=submit]{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+}
