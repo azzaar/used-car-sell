@@ -8,6 +8,7 @@
 .index{
     background-color: #267191 ;
 }
+
 ul{
     list-style: none;
     display: flex;
@@ -116,6 +117,8 @@ p{
     cursor: pointer;
     padding: 10px;
 }
+
+/*car end*/
 .edits{
     
     width: 100%;
@@ -159,3 +162,31 @@ p{
     margin-left: 100px;
     margin-top: 30px;
  }
+/*edit end*/
+ .view{
+    width: 100%;
+    height: 700px;
+    background-color: #267191;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    margin-top: 45px;
+   
+}
+
+.view table td{
+    color: white;
+    padding: 10px;
+}
+
+
+.view button{
+    border-radius: 5px;
+    border:none;
+    background-color:white;
+    color:#267191;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+}

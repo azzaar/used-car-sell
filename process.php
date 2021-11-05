@@ -17,8 +17,8 @@
 		include("edit profile.php");
 		break;
 
-		case 'news':
-		include("news.php");
+		case 'view':
+		include("view.php");
 		break;
 
 		case 'services':
