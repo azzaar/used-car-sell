@@ -17,8 +17,8 @@
     $reg=$_POST['registertion'];
     $ins=$_POST['insurance'];
     $why=$_POST['why'];
-    $image=$_POST['file'];
-
+    $image=$_FILES['file']['name'];
+    move_uploaded_file($_FILES['file']['tmp_name'],"image/".$image);
 
 
   $sqli="INSERT INTO student(name,email,phone,city,year,make,model,kms,own,price,image,type,color,regnum,insurance,why) VALUES('$name','$email','$phone','$city','$year','$make','$model','$kms','$own','$price','$image','$fuel','$color','$reg','$ins','$why')";
@@ -37,7 +37,7 @@
 
 <div class="sell">
   <h1>Details</h1>
-  <form method="post" action="" name="sellform" >
+  <form method="post" action="" name="sellform" enctype="multipart/form-data" >
     <table>
       <tr>
        <td>Name :</td>

@@ -5,16 +5,16 @@
 		include("homepage.php");
 		break;
 
-		case 'about':
-		include("about.php");
+		case 'car':
+		include("car.php");
 		break;
 
 		case 'sell':
 		include("sell.php");
 		break;
 
-		case 'products':
-		include("products.php");
+		case 'edit':
+		include("edit profile.php");
 		break;
 
 		case 'news':

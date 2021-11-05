@@ -9,8 +9,10 @@
    $address=$_POST['address'];
    $zip=$_POST['zip'];
    $tel=$_POST['tel'];
+   $state=$_POST['state'];
+   $city=$_POST['city'];
  
-   $sql="INSERT INTO reg(name,email,password,address,zipcode,phone)VALUES ('$name','$email','$password','$address','$zip','$tel')";
+   $sql="INSERT INTO reg(name,email,password,address,zipcode,phone,state,city)VALUES ('$name','$email','$password','$address','$zip','$tel','$state','$city')";
     $result=mysqli_query($connection,$sql);
 
     if ($result) {
@@ -38,26 +40,26 @@
      <table>
       <tr>
        <td>Name :</td>
-       <td><input type="text" name="name" ></td>
+       <td><input type="text" name="name" required></td>
        <td id="name" class="id"></td>
       </tr>
           
       <tr>
        <td>Address</td>
-       <td><input type="text" name="address" ></td>
+       <td><input type="text" name="address" required></td>
        <td id="address" class="id"></td>
       </tr>
           
       <tr>
        <td>Zip code</td>
-       <td><input type="text" name="zip" ></td>
+       <td><input type="text" name="zip" required></td>
        <td id="zip" class="id"></td>
       </tr>
           
       <tr>
         <td>State</td>
         <td>
-        <select name="state" >
+        <select name="state" required>
         <option>select your state</option>
         <option>Kerala</option>
         <option>Tamilnadu</option>
@@ -71,7 +73,7 @@
       <tr>
        <td>City</td>
        <td>
-        <select name="city" >
+        <select name="city"required >
         <option>select your city</option>
         <option>TVM</option>
         <option>Kollam</option>
@@ -84,7 +86,7 @@
              
       <tr>
         <td>Phone </td>
-        <td><input type="tel" name="tel" ></td>
+        <td><input type="tel" name="tel" required></td>
         <td id="phone" class="id"></td>
       </tr>
           

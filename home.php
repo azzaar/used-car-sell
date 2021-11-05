@@ -1,6 +1,7 @@
 <?php session_start();
-?>
 
+?>
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
   <?php
      include 'menu.php';
   ?> 
-
+  
 
 <?php
   if(isset($_REQUEST['act'])){
@@ -29,11 +30,6 @@
     include("homepage.php");
   }
 ?>
-
-  
-  
-  </div> 
-
   
 </body>
 </html>
