@@ -129,7 +129,7 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-.edits input[type=text],[type=email],[type=tel]{
+.edits input[type=text],[type=email],[type=tel],[type=password]{
     border: none;
     outline: none;
     background: none;
@@ -137,7 +137,14 @@ p{
     color: white;
 }
 .edits h1{
-    padding-bottom: 80px;
+    padding-top: 40px;
+}
+.edits h3{
+    padding-top: 40px;
+    text-align: center;
+}
+.edits td {
+    padding: 10px;
 }
 
 .edits input[type=submit]{
@@ -150,5 +157,5 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     margin-left: 100px;
-    margin-top: 80px;
+    margin-top: 30px;
  }
